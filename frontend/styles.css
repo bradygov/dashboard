@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform for hover effect */
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.weather-result {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #c8e6c9;
+    padding: 20px;
+    border-radius: 10px; /* Increased rounding for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s; /* Added transition for hover effect */
+}
+
+.current-weather:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.weather-card {
+    width: 150px;
+    margin: 10px;
+    background: #f1f8e9;
+    padding: 15px;
+    border-radius: 10px; /* Increased rounding for consistency */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s; /* Added transition for hover effect */
+}
+
+.weather-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.weather-card h2 {
+    margin: 0;
+    color: #388e3c;
+    font-size: 16px;
+}
+
+.weather-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
